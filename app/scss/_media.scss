@@ -1,0 +1,889 @@
+@media (max-width: 1270px){
+    .slick-next{
+        right: -15px;
+    }
+    .slick-prev{
+        left: -15px;
+    }
+}
+@media (max-width: 1200px){
+    .header{
+        &__menu{
+            max-width: 840px;
+        }
+        &__top-link{
+            margin-left: 40px;
+        }
+    }
+    .info{
+        &__content{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__item{
+            margin: 0 auto;
+        }
+    }
+    .price{
+        &__item{
+            &-number{
+                left: 0;
+            }
+        }
+    }
+}
+@media (max-width: 1175px){
+    .advantages{
+        &__content{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__item{
+            max-width: 90%;
+        }
+    }
+    .aside{
+        &__content{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .footer{
+        &__top{
+            flex-direction: column;
+            margin-top: 60px;
+        }
+        &__logo-link{
+            margin: 0 auto;
+        }
+        &__box{
+            margin-top: 30px;
+        }
+    }
+}
+@media (max-width: 1100px){
+    .header{
+        &__top{
+            flex-direction: column;
+        }
+        &__logo-link{
+            margin: 0 auto;
+        }
+        &__logo-img{
+            margin-bottom: 40px;
+        }
+        &__bottom{
+            flex-direction: column;
+        }
+        &__menu{
+            max-width: 100%;
+        }
+        .header__info{
+            margin-left: 40px;
+        }
+    }
+    .header ul.header__contact{
+        order: -1;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .service__content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1000px){
+    .work__content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .work__item{
+        margin: 0 auto;
+    }
+    .reviews{
+        &__item{
+            display: flex;
+            flex-direction: column;
+        }
+        &__box{
+           max-width: 100%;
+           &-text{
+               margin-bottom: 20px;
+           }
+        }
+        &__img-box{
+            margin: 0 auto;
+        }
+        &__link{
+            bottom: 0;
+        }
+        &__box{
+            margin-right: 0;
+        }
+    }
+    .reviews__item-link img{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 950px){
+    .aside{
+        &__bottom{
+            flex-direction: column;
+            img{
+                display: none;
+            }
+        }
+        &__form{
+            margin-left: 0;
+            margin: 0 auto;
+        }
+        &__box{
+            &-title{
+                margin-bottom: 30px;
+            }
+            &-subtitle{
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+            &-text{
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .footer{
+        &__top{
+            margin-top: 25px;
+        }
+        &__box{
+            flex-direction: column;
+        }
+        .footer__info{
+            margin-bottom: 20px;
+        }
+        &__top-link{
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .header{
+        &__box{
+            flex-direction: column;
+        }
+        .header__info{
+            margin-bottom: 20px;
+        }
+        &__top-link{
+            margin: 0;
+        }
+        &__menu{
+            &-item + .header__menu-item{
+                margin-left: 60px;
+            }
+        }
+        ul li:hover .submenu{
+            display: none;
+        }
+    }
+    .about{
+        &__bottom{
+            padding: 30px;
+        }
+        &__content-title{
+            font-size: 45px;
+            line-height: 50px;
+        }
+    }
+    .info{
+        &__content{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__item{
+            margin: 0 auto;
+        }
+    }
+    .slick-next,
+    .slick-prev{
+        height: 60px;
+        width: 60px;
+    }
+    .map{
+        iframe{
+            width: 100%;
+            height: 500px;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .header{
+        .submenu{
+            position: relative;
+            z-index: 11;
+            background-color: #fbce01;
+        }
+        &__menu{
+            z-index: 10;
+            transform: translateY(-200%);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 280px;
+            height: 100vh;
+            justify-content: start;
+            align-items: start;
+            flex-direction: column;
+            transition: all .3s;
+            background-color:#fbce01;
+            &.header__menu--active{
+                transform: translateY(0%);
+                transition: all .3s;
+                border-radius: 0 10px 10px 0;
+                position: fixed;
+            }
+            &-item + .header__menu-item{
+                margin-left: 0;
+            }
+            &-item{
+                padding: 20px 0 10px 50px;
+            }
+            &-link{
+                &:hover{
+                    border-bottom: 4px solid #000;
+                    padding-bottom: 3px;
+                }
+                &--active{
+                    border-bottom: 4px solid #000;
+                    padding-bottom: 3px;
+                }
+            }
+        }
+        &__bottom-box{
+            display: block;
+            background-color: #fbce01;
+            z-index: 6;
+            border-radius: 15px;
+            height: 50px;
+            position: relative;
+        }
+        .header__close{
+            display: block;
+        }
+        &__btn{
+            display: flex;
+            background-color: #fbce01;
+            border: none;
+            outline: none;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            height: 50px;
+            cursor: pointer;
+            p{
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 13px;
+                margin-right: 10px;
+            }
+            img{
+                max-width: 30%;
+            }
+        }
+    }
+    .service__content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service__item{
+        margin: 0 auto;
+    }
+}
+@media (max-width: 760px){
+    .about{
+        &__bottom{
+            background-image: none;
+            flex-direction: column;
+        }
+        &__content{
+            &-subtitle{
+                max-width: 100%;
+                margin-bottom: 15px;
+            }
+            &-text{
+                max-width: 100%;
+                margin-bottom: 15px;
+            }
+            &-title{
+                margin-bottom: 15px;
+            }
+        }
+        &__form{
+            &-input{
+                max-width: 100%;
+            }
+            &-btn{
+                max-width: 255px;
+                margin: 0 auto;
+            }
+            &-text{
+                margin-top: 20px;
+            }
+        }
+    }
+    .work__content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px){
+    ul.header__info{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .header{
+        .header__info{
+            margin-left: 0;
+        }
+    }
+    .footer{
+        min-height: auto;
+        padding-bottom: 20px;
+        &__info{
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .thanks{
+        &__img-logo{
+            margin: 40px 0 20px;
+        }
+        &__img-check{
+            height: 180px;
+        }
+        &__title{
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+        &__text{
+            margin-bottom: 40px;
+        }
+    }
+    .page-404{
+        &__img-logo{
+            margin: 40px 0 20px;
+        }
+        &__img-check{
+            height: 180px;
+            margin-bottom: 30px;
+        }
+        &__title{
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+        &__text{
+            margin-bottom: 40px;
+        }
+    }
+    .slick-next,
+    .slick-prev{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 627px){
+    .header{
+        &__info{
+            &-phone{
+                margin-top: 20px;
+            }
+        }
+    }
+    .footer{
+        &__info{
+            &-phone{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .advantages{
+        &__box{
+            padding-right: 10px;
+            margin-left: -60px;
+            &-title{
+                margin-bottom: 10px;
+            }
+            &-text{
+                padding-bottom: 10px;
+            }
+        }
+        &__item{
+            max-width: 78%;
+        }
+    }
+    .info{
+        &__content{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__item{
+            max-width: 383px;
+            width: 100%;
+        }
+        &__box{
+            max-width: 300px;
+            padding-right: 80px;
+        }
+    }
+    .aside{
+        &top{
+            padding: 0 10px;
+        }
+        &__item{
+            padding: 30px 90px 30px 30px;
+        }
+        .subtext{
+            padding: 10px 10px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+    .production{
+        &__img{
+            margin-bottom: 30px;
+        }
+        &__subtitle{
+            margin-bottom: 15px;
+        }
+        &__text{
+            margin-bottom: 30px;
+        }
+    }
+    .price-production{
+        &__title{
+            margin-bottom: 20px;
+        }
+        &__content{
+            flex-direction: column;
+        }
+        &__item{
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .map{
+        margin-bottom: 40px;
+        iframe{
+            width: 100%;
+            height: 300px;
+        }
+    }
+    .reviews__item-link img {
+        min-height: 300px;
+    }
+    .popup,
+    .popup__bottom{
+        &__box{
+           top: -20px;
+           right: -9px;
+        }
+        &__content{
+            padding: 0 20px;
+        }
+    }
+    
+}
+
+@media (max-width: 550px){
+    .service__item{
+        height: 310px;
+    }
+    .service__content{
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .about{
+        &__bottom{
+            padding: 15px;
+        }
+        &__content{
+            span{
+                font-size: 33px;
+                line-height: 35px; 
+            }
+            &-subtitle{
+                font-size: 15px;
+                line-height: 22px;
+            }
+            &-text{
+                font-size: 15px;
+                line-height: 22px;
+            }
+        }
+        &__content-title{
+            font-size: 33px;
+            line-height: 35px;
+        }
+    }
+    .advantages{
+        &__img{
+            height: 120px;
+        }
+    }
+    .work{
+        &__img{
+            height: 200px;
+        }
+        &__link{
+            height: 200px;
+        }
+    }
+    .aside{
+        &__text{
+            font-size: 13px;
+            line-height: 20px;
+        }
+        &__item{
+            padding: 10px 65px 10px 10px;
+        }
+        &__number{
+            margin-right: 15px;
+        }
+        &__box{
+            &-title{
+                font-size: 40px;
+                line-height: 45px;
+                margin-bottom: 10px;
+                span{
+                    font-size: 40px;
+                    line-height: 45px;
+                }
+            }
+            &-subtitle{
+                font-size: 15px;
+                line-height: 20px;
+                margin-bottom: 10px;
+            }
+            &-text{
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+    }
+    .footer{
+        &__bottom{
+            &-content{
+                height: auto;
+                flex-direction: column;
+            }
+            &-item{
+                padding: 10px 0;
+            }
+        }
+    }
+    .contacts{
+        &__content{
+            &-title{
+                font-size: 15px;
+            }
+        }
+        &__item{
+            span{
+                font-size: 15px;
+            }
+        }
+        &__text{
+            font-size: 15px;
+        }
+        &__link{
+            font-size: 15px;
+        }
+    }
+    .price{
+        &__item{
+            &-name{
+                font-size: 15px;
+            }
+            &-text{
+                font-size: 15px;
+            }
+        }
+    }
+    .reviews__item-link img {
+        min-height: 200px;
+    }
+    .thanks{
+        &__img-check{
+            height: 160px;
+        }
+        &__title{
+            font-size: 25px;
+        }
+        &__text{
+            margin-bottom: 40px;
+            font-size: 15px;
+        }
+    }
+    .page-404{
+        &__img-check{
+            height: 160px;
+        }
+        &__title{
+            font-size: 25px;
+        }
+        &__text{
+            margin-bottom: 40px;
+            font-size: 15px;
+        }
+    }
+    .header{
+        &__info{
+            &-phone{
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            &-time{
+                margin-left: 0;
+            }
+        }
+    }
+    .service__item{
+        height: 280px;
+        &-link{
+            padding: 15px 40px;
+        }
+        &-title{
+            font-size: 14px;
+        }
+    }
+    .service__content{
+        grid-gap: 20px;
+    }
+    .popup,
+    .popup__bottom{
+        &__form{
+            padding: 5px;
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .service__item{
+        height: 250px;
+        &-link{
+            padding: 15px 40px;
+        }
+    }
+    .service__content{
+        grid-gap: 15px;
+    }
+}
+
+@media (max-width: 400px){
+    .about{
+        &__text{
+            font-size: 13px;
+            line-height: 20px;   
+        }
+        &__content{
+            span{
+                font-size: 27px;
+                line-height: 35px; 
+            }
+            &-subtitle{
+                font-size: 13px;
+                line-height: 18px;
+            }
+            &-text{
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+        &__content-title{
+            font-size: 27px;
+            line-height: 35px;
+        }
+        &__form-btn{
+            font-size: 12px;
+            padding: 17px 60px;
+        }
+    }
+    .work{
+        &__img{
+            height: 160px;
+        }
+        &__link{
+            height: 160px;
+        }
+    }
+    .work__box-link{
+        max-width: 100%;
+        width: 100%;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .aside{
+        &__text{
+            font-size: 13px;
+            line-height: 20px;
+            &::after{
+                right: -30px;
+            }
+        }
+        &__item{
+            padding: 10px 42px 10px 10px;
+        }
+        &__box{
+            &-title{
+                font-size: 30px;
+                line-height: 35px;
+                margin-bottom: 10px;
+                span{
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+            }
+            &-subtitle{
+                font-size: 15px;
+                line-height: 20px;
+                margin-bottom: 10px;
+            }
+            &-text{
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+        &__form{
+            padding: 5px;
+            &-btn{
+                padding: 20px 30px;
+                width: 100%;
+            }
+        }
+    }
+    .price-production{
+        &__item{
+            &-text{
+                padding-left: 20px;
+            }
+            &-number{
+                padding-right: 20px;
+            }
+        }
+    }
+    .contacts{
+        &__item{
+            span{
+                font-size: 12px;
+            }
+        }
+        &__text{
+            font-size: 12px;
+        }
+        &__link{
+            font-size: 12px;
+        }
+    }
+    .price{
+        &__item{
+            &-name{
+                font-size: 12px;
+                line-height: 20px;
+                padding-right: 5px;
+            }
+            &-text{
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    }
+    .thanks{
+        &__img-check{
+            height: 160px;
+        }
+        &__title{
+            font-size: 21px;
+        }
+        &__text{
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+    }
+    .page-404{
+        &__img-check{
+            height: 160px;
+            margin-bottom: 20px;
+        }
+        &__title{
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+        &__text{
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+    }
+    .service__item{
+        height: 250px;
+        &-link{
+            padding: 13px 30px;
+        }
+    }
+    .service__content{
+        grid-gap: 15px;
+    }
+    .info{
+        &__box{
+            padding-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 350px){
+    .about{
+        &__form-btn{
+            max-width: 100%;
+            width: 100%;
+            font-size: 11px;
+            padding: 17px 30px;
+        }
+    }
+    .header{
+        &__info{
+            &-location{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .service__item{
+        height: 210px;
+        &-link{
+            padding: 12px 25px;
+        }
+    }
+    .service__content{
+        grid-gap: 15px;
+    }
+    .popup,
+    .popup__bottom{
+        &__form-btn{
+            padding: 16px 40px;
+            font-size: 14px;
+        }
+        &__form-text{
+            margin-bottom: 20px;
+        }
+    }
+    .info{
+        &__box{
+            padding-right: 20px;
+        }
+    }
+}

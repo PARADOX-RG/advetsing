@@ -1,0 +1,42 @@
+%roboto-800{
+    font-family: 'Roboto-Black', sans-serif;
+    font-weight: 800;
+}
+%robotoitalic-800{
+    font-family: 'Roboto-BlackItalic', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+%roboto-700{
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 700;
+}
+%robotoitalic-700{
+    font-family: 'Roboto-BoldItalic', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+%roboto-500{
+    font-family: 'Roboto-Medium', sans-serif;
+    font-weight: 500;
+}
+%roboto-400{
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 400;
+}
+%roboto-300{
+    font-family: 'Roboto-Light', sans-serif;
+    font-weight: 300;
+}
+%robotoitalic-300{
+    font-family: 'Roboto-LightItalic', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

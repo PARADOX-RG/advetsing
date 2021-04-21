@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наружка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__top">
+                <a class="header__logo-link" href="index.html">
+                    <img class="header__logo-img" src="images/logo.svg" alt="logo">
+                </a>
+                <div class="header__box">
+                    <ul class="header__info">
+                        <li class="header__info-item header__info-location">
+                            <img src="images/icons/icon-location.svg" alt="">
+                            <div class="header__info-box">
+                                <p class="header__info-title">
+                                    АДРЕС
+                                </p>
+                                <p class="header__info-text">
+                                    г. Краснодар, <br> ул. Вавилова, 18
+                                </p>
+                            </div>
+                        </li>
+                        <li class="header__info-item header__info-time">
+                            <img src="images/icons/icon-clock.svg" alt="">
+                            <div class="header__info-box">
+                                <p class="header__info-title">
+                                    РАБОТАЕМ
+                                </p>
+                                <p class="header__info-text">
+                                    без выходных с 8.00 до 21.00
+                                </p>
+                            </div>
+                        </li>
+                        <li class="header__info-item header__info-phone">
+                            <img src="images/icons/icon-phone.svg" alt="">
+                            <div class="header__info-box">
+                                <a class="header__info-number" href="tel:+79284426317">
+                                    <span>+7 (928)</span> 442 63 17
+                                </a>
+                                <p class="header__info-text">
+                                    <span>Звоните!</span> Рассчитаем сразу 
+                                    по самой выгодной цене
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="header__top-link" href="#popup">
+                        ЗАКАЗАТЬ ЗВОНОК
+                    </a>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__bottom-box">
+                    <button class="header__btn">
+                        <p>МЕНЮ</p>
+                        <img src="images/icons/menu.svg" alt="">
+                    </button>
+                </div>
+                <ul class="header__menu">
+                    <a href="#header" class="header__close" id="close">
+                        <img src="images/icons/close.svg" alt="">
+                    </a>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="index.html">
+                            ГЛАВНАЯ
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link header__menu-open" href="#">
+                            УСЛУГИ
+                        </a>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="page.html">
+                                    Вывески
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Объемные буквы
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Световые короба
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Вывески из пайеток
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Крышные установки
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Плоские буквы
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Стелы
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Брендирование авто
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Баннеры
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Наклейки на стекло
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Самоклеющаяся пленка
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Информационные стенды
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Уголки потребителя
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Штендеры
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Офисные и уличные таблички
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Панель-кронштейны
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link header__menu-link--active" href="work.html">
+                            НАШИ РАБОТЫ
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="price.html">
+                            ЦЕНЫ
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="reviews.html">
+                            ОТЗЫВЫ
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="contacts.html">
+                            КОНТАКТЫ
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header__contact">
+                    <li class="header__contact-item">
+                        <a class="header__contant-link" href="https://wa.me/79284426317">
+                            <img src="images/icons/facetime.svg" alt="icons">
+                        </a>
+                    </li>
+                    <li class="header__contact-item">
+                        <a class="header__contant-link" href="tg://resolve?domain=@Narujka123">
+                            <img src="images/icons/telegram.svg" alt="icons">
+                        </a>
+                    </li>
+                    <li class="header__contact-item">
+                        <a class="header__contant-link" href="https://www.instagram.com/zigzagydachi.ru/">
+                            <img src="images/icons/instagram.svg" alt="icons">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__box">
+                    <a href="#header" class="popop__close close-popup">
+                        <img class="popup__close-img" src="images/icons/icon-close.svg" alt="">
+                    </a>
+                </div>
+                <form class="popup__form" action="mail.php" id="form" method="POST">
+                    <input type="hidden" name="admin_email[]" value="">
+                    <input type="hidden" name="form_subject" value="Тема письма">
+                    <h5 class="popup__form-title">
+                        Перезвоним за 5 минут!
+                    </h5>
+                    <input class="popup__form-input" name="name" type="text" placeholder="Ваше имя">
+                    <input class="popup__form-input" name="phone" required type="tel" placeholder="Ваш телефон">
+                    <button class="popup__form-btn" type="submit">
+                        ЗАКАЗАТЬ ЗВОНОК!
+                    </button>
+                    <p class="popup__form-text">
+                        Перезвоним в течение 5 минут и ответим на все Ваши вопросы!
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <section class="work work__page">
+            <div class="container">
+                <div class="work__inner">
+                    <h1>
+                        Примеры наших работ
+                    </h1>
+                    <div class="work__content">
+                        <div class="work__item">
+                            <img class="work__img" src="images/portfolio/1.jpg" alt="work images">
+                            <a class="work__link" data-fancybox="gallery" href="images/portfolio/1.jpg">
+                            </a>
+                        </div>
+                        <div class="work__item">
+                            <img class="work__img" src="images/portfolio/1.jpg" alt="work images">
+                            <a class="work__link" data-fancybox="gallery" href="images/portfolio/1.jpg">
+                            </a>
+                        </div>
+                        <div class="work__item">
+                            <img class="work__img" src="images/portfolio/1.jpg" alt="work images">
+                            <a class="work__link" data-fancybox="gallery" href="images/portfolio/1.jpg">
+                            </a>
+                        </div>
+                        <div class="work__item">
+                            <img class="work__img" src="images/portfolio/1.jpg" alt="work images">
+                            <a class="work__link" data-fancybox="gallery" href="images/portfolio/1.jpg">
+                            </a>
+                        </div>
+                        <div class="work__item">
+                            <img class="work__img" src="images/portfolio/1.jpg" alt="work images">
+                            <a class="work__link" data-fancybox="gallery" href="images/portfolio/1.jpg">
+                            </a>
+                        </div>
+                        <div class="work__item">
+                            <img class="work__img" src="images/portfolio/1.jpg" alt="work images">
+                            <a class="work__link" data-fancybox="gallery" href="images/portfolio/1.jpg">
+                            </a>
+                        </div>
+                        <div class="work__item">
+                            <img class="work__img" src="images/portfolio/1.jpg" alt="work images">
+                            <a class="work__link" data-fancybox="gallery" href="images/portfolio/1.jpg">
+                            </a>
+                        </div>
+                        <div class="work__item">
+                            <img class="work__img" src="images/portfolio/1.jpg" alt="work images">
+                            <a class="work__link" data-fancybox="gallery" href="images/portfolio/1.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__bottom">
+                        <div class="about__content">
+                            <span>
+                                ДАВАЙТЕ
+                            </span>
+                            <h3 class="about__content-title">
+                                СРАВНИМ ЦЕНЫ!
+                            </h3>
+                            <p class="about__content-subtitle">
+                                Оставьте заявку и мы <br> с удовольствием перезвоним
+                                и согласуем для Вас комфортную цену.
+                            </p>
+                            <p class="about__content-text">
+                                Обещаем, согласуем самую минимальную цену!
+                            </p>
+                        </div>
+                        <form class="about__form" action="mail.php" id="form" method="POST">
+                            <input type="hidden" name="form_subject" value="Тема письма">
+                            <input class="about__form-input" type="text" placeholder="Ваше имя">
+                            <input class="about__form-input" required type="text" placeholder="Ваш телефон">
+                            <button class="about__form-btn" type="submit">
+                                ЗАКАЗАТЬ ЗВОНОК!
+                            </button>
+                            <p class="about__form-text">
+                                Перезвоним в течение 5 минут!
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__inner">
+                    <h2 class="advantages__title title">
+                        Наши преимущества
+                    </h2>
+                    <div class="advantages__content">
+                        <div class="advantages__item">
+                            <img class="advantages__img" src="images/advantages/1.svg" alt="icons">
+                            <div class="advantages__box">
+                                <h5 class="advantages__box-title">
+                                    СОБСТВЕННОЕ ПРОИЗВОДСТВО
+                                </h5>
+                                <p class="advantages__box-text">
+                                    Благодаря собственному производству Вы получите
+                                    максимально качественную продукцию по максимально
+                                    низкой цене.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <img class="advantages__img" src="images/advantages/2.svg" alt="icons">
+                            <div class="advantages__box">
+                                <h5 class="advantages__box-title">
+                                    РЕАЛЬНЫЕ ЦЕНЫ
+                                </h5>
+                                <p class="advantages__box-text">
+                                    Вы гарантированно получите самую низкую цену в Краснодаре. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <img class="advantages__img" src="images/advantages/3.svg" alt="icons">
+                            <div class="advantages__box">
+                                <h5 class="advantages__box-title">
+                                    Всегда в срок
+                                </h5>
+                                <p class="advantages__box-text">
+                                    Пунктуальност - это одно из важнейших пунктов успешной работы.
+                                    Работая с нами Вы можете не переживать - проект будет сделан в
+                                    заранее оговоренные сроки.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <img class="advantages__img" src="images/advantages/4.svg" alt="icons">
+                            <div class="advantages__box">
+                                <h5 class="advantages__box-title">
+                                    Полная гарантия
+                                </h5>
+                                <p class="advantages__box-text">
+                                    Мы гарантируем качество наших работ в течение 5 лет!
+                                    С нами Вы можете быть абсолютно уверены и на за что не переживать.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <img class="advantages__img" src="images/advantages/5.svg" alt="icons">
+                            <div class="advantages__box">
+                                <h5 class="advantages__box-title">
+                                    Качество материалов
+                                </h5>
+                                <p class="advantages__box-text">
+                                    Используем самые качественные материалы при производстве.
+                                    Обязательно производим тестирование перед монтажом.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <img class="advantages__img" src="images/advantages/6.svg" alt="icons">
+                            <div class="advantages__box">
+                                <h5 class="advantages__box-title">
+                                    Идеальная ЗАСВЕТКА
+                                </h5>
+                                <p class="advantages__box-text">
+                                    Используемые нами диоды дают потрясающую яркость и идеальную засветку.
+                                    Такое исполнение привлекает внимание окружающих. Ваше реклама не
+                                    останется не замеченной.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <div class="info__inner">
+                    <h2 class="info__title title">
+                        Схема работы с нами
+                    </h2>
+                    <p class="info__subtitle">
+                        Сделайте свой заветный первый шаг на пути к рекламе,
+                        которая принесет Вам новых клиентов. Мы всегда с удовольствием
+                        готовы ответить на все Ваши вопросы.
+                    </p>
+                    <div class="info__content">
+                        <div class="info__item">
+                            <p class="info__number">1</p>
+                            <div class="info__box">
+                                <p class="info__box-text">
+                                    Оставьте заявку или позвоните по
+                                    номеру <br> +7 953 <span>442-63-17</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <p class="info__number">2</p>
+                            <div class="info__box">
+                                <p class="info__box-text">
+                                    К Вам приедет наш специалист и сделает замеры бесплатно. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <p class="info__number">3</p>
+                            <div class="info__box">
+                                <p class="info__box-text">
+                                    Мы предварительно делаем расчет и высылаем Вам КП. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <p class="info__number">4</p>
+                            <div class="info__box">
+                                <p class="info__box-text">
+                                    Бесплатно подготавливаем макет и согласовываем с Вами. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <p class="info__number">5</p>
+                            <div class="info__box">
+                                <p class="info__box-text">
+                                    После согласования макета производите оплату. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <p class="info__number">6</p>
+                            <div class="info__box">
+                                <p class="info__box-text">
+                                    Запускаем в производство согласованное изделие.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <p class="info__number">7</p>
+                            <div class="info__box">
+                                <p class="info__box-text">
+                                    Приезжаем на место и производим монтаж изделия. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <p class="info__number">8</p>
+                            <div class="info__box">
+                                <p class="info__box-text">
+                                    Вы наслаждаетесь полученным результатом. Ведь мы учитываем любые мелочи!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="aside">
+            <div class="container">
+                <div class="aside__inner">
+                    <div class="aside__top">
+                        <h2 class="aside__title title">
+                            Часто задаваемые вопросы
+                        </h2>
+                        <div class="aside__content">
+                            <div class="aside__left">
+                                <div id="drop" class="aside__item">
+                                    <p class="aside__number">
+                                        1
+                                    </p>
+                                    <p class="aside__text">
+                                        Какую наружную рекламу можно заказать для открытия магазина,
+                                        офиса и т.д?
+                                    </p>
+                                    <div id="drop-open" class="subtext">
+                                        Для того,чтобы Вас заметили потенциальные клиенты,лучше
+                                        всего заказать рекламную вывеску с объёмными элементами и
+                                        буквами с подсветкой,пайетками.Красиво и со вкусом оформленная
+                                        реклама говорит для клиента о солидности и престиже фирмы,о её
+                                        статусе и профессионализме сотрудников. Если бюджет на рекламу
+                                        не позволяет заказать такую вывеску,то существует менее затратный
+                                        вариант: баннерная реклама с подсветкой светодиодными прожекторами,
+                                        самоклеющиеся плёнки на окна и двери фасада.
+                                    </div>
+                                </div>
+                                <div id="drop" class="aside__item">
+                                    <p class="aside__number">
+                                        2
+                                    </p>
+                                    <p class="aside__text">
+                                        Сколько стоит наружная реклама?
+                                    </p>
+                                    <div class="subtext">
+                                        Для того,чтобы Вас заметили потенциальные клиенты,лучше
+                                        всего заказать рекламную вывеску с объёмными элементами и
+                                        буквами с подсветкой,пайетками.Красиво и со вкусом оформленная
+                                        реклама говорит для клиента о солидности и престиже фирмы,о её
+                                        статусе и профессионализме сотрудников. Если бюджет на рекламу
+                                        не позволяет заказать такую вывеску,то существует менее затратный
+                                        вариант: баннерная реклама с подсветкой светодиодными прожекторами,
+                                        самоклеющиеся плёнки на окна и двери фасада.
+                                    </div>
+                                </div>
+                                <div id="drop" class="aside__item">
+                                    <p class="aside__number">
+                                        3
+                                    </p>
+                                    <p class="aside__text">
+                                        Сколько стоит наружная реклама?
+                                    </p>
+                                    <div class="subtext">
+                                        Для того,чтобы Вас заметили потенциальные клиенты,лучше
+                                        всего заказать рекламную вывеску с объёмными элементами и
+                                        буквами с подсветкой,пайетками.Красиво и со вкусом оформленная
+                                        реклама говорит для клиента о солидности и престиже фирмы,о её
+                                        статусе и профессионализме сотрудников. Если бюджет на рекламу
+                                        не позволяет заказать такую вывеску,то существует менее затратный
+                                        вариант: баннерная реклама с подсветкой светодиодными прожекторами,
+                                        самоклеющиеся плёнки на окна и двери фасада.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aside__right">
+                                <div id="drop" class="aside__item">
+                                    <p class="aside__number">
+                                        4
+                                    </p>
+                                    <p class="aside__text">
+                                        Как заказать у вас рекламу и как начать с вами сотрудничать?
+                                    </p>
+                                    <div class="subtext">
+                                        Для того,чтобы Вас заметили потенциальные клиенты,лучше
+                                        всего заказать рекламную вывеску с объёмными элементами и
+                                        буквами с подсветкой,пайетками.Красиво и со вкусом оформленная
+                                        реклама говорит для клиента о солидности и престиже фирмы,о её
+                                        статусе и профессионализме сотрудников. Если бюджет на рекламу
+                                        не позволяет заказать такую вывеску,то существует менее затратный
+                                        вариант: баннерная реклама с подсветкой светодиодными прожекторами,
+                                        самоклеющиеся плёнки на окна и двери фасада.
+                                    </div>
+                                </div>
+                                <div id="drop" class="aside__item">
+                                    <p class="aside__number">
+                                        5
+                                    </p>
+                                    <p class="aside__text">
+                                        Как заказать у вас рекламу и как начать с вами сотрудничать?
+                                    </p>
+                                    <div class="subtext">
+                                        Для того,чтобы Вас заметили потенциальные клиенты,лучше
+                                        всего заказать рекламную вывеску с объёмными элементами и
+                                        буквами с подсветкой,пайетками.Красиво и со вкусом оформленная
+                                        реклама говорит для клиента о солидности и престиже фирмы,о её
+                                        статусе и профессионализме сотрудников. Если бюджет на рекламу
+                                        не позволяет заказать такую вывеску,то существует менее затратный
+                                        вариант: баннерная реклама с подсветкой светодиодными прожекторами,
+                                        самоклеющиеся плёнки на окна и двери фасада.
+                                    </div>
+                                </div>
+                                <div id="drop" class="aside__item">
+                                    <p class="aside__number">
+                                        6
+                                    </p>
+                                    <p class="aside__text">
+                                        Как заказать у вас рекламу и как начать с вами сотрудничать?
+                                    </p>
+                                    <div class="subtext">
+                                        Для того,чтобы Вас заметили потенциальные клиенты,лучше
+                                        всего заказать рекламную вывеску с объёмными элементами и
+                                        буквами с подсветкой,пайетками.Красиво и со вкусом оформленная
+                                        реклама говорит для клиента о солидности и престиже фирмы,о её
+                                        статусе и профессионализме сотрудников. Если бюджет на рекламу
+                                        не позволяет заказать такую вывеску,то существует менее затратный
+                                        вариант: баннерная реклама с подсветкой светодиодными прожекторами,
+                                        самоклеющиеся плёнки на окна и двери фасада.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside__bottom">
+                        <div class="aside__box">
+                            <h3 class="aside__box-title">
+                                <span>
+                                    У ВАС
+                                </span>
+                                ОСТАЛИСЬ <br> ВОПРОСЫ?
+                            </h3>
+                            <p class="aside__box-subtitle">
+                                Оставьте заявку и мы перезвоним Вам в течечени 5 минут
+                                и ответим на все Ваши вопросы.
+                            </p>
+                            <p class="aside__box-text">
+                                Каждая деталь будет учтена!
+                            </p>
+                        </div>
+                        <img src="images/ostalis-voprosi.jpg" alt="images">
+                        <form class="aside__form" action="mail.php" id="form" method="POST">
+                            <input type="hidden" name="form_subject" value="Тема письма">
+                            <h5 class="aside__form-title">
+                                Перезвоним за 5 минут!
+                            </h5>
+                            <input class="aside__form-input" type="text" placeholder="Ваше имя">
+                            <input class="aside__form-input" required type="text" placeholder="Ваш телефон">
+                            <button class="aside__form-btn" type="submit">
+                                ЗАКАЗАТЬ ЗВОНОК!
+                            </button>
+                            <p class="aside__form-text">
+                                Перезвоним в течение 5 минут!
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="popup__bottom" class="popup__bottom">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__box">
+                    <a href="#footer" class="popop__close close-popup">
+                        <img class="popup__close-img" src="images/icons/icon-close.svg" alt="">
+                    </a>
+                </div>
+                <form class="popup__form" action="mail.php" id="form" method="POST">
+                    <input type="hidden" name="admin_email[]" value="">
+                    <input type="hidden" name="form_subject" value="Тема письма">
+                    <h5 class="popup__form-title">
+                        Перезвоним за 5 минут!
+                    </h5>
+                    <input class="popup__form-input" name="name" type="text" placeholder="Ваше имя">
+                    <input class="popup__form-input" name="phone" required type="tel" placeholder="Ваш телефон">
+                    <button class="popup__form-btn" type="submit">
+                        ЗАКАЗАТЬ ЗВОНОК!
+                    </button>
+                    <p class="popup__form-text">
+                        Перезвоним в течение 5 минут и ответим на все Ваши вопросы!
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__top">
+                <a class="footer__logo-link" href="#">
+                    <img class="footer__logo-img" src="images/logo.svg" alt="logo">
+                </a>
+                <div class="footer__box">
+                    <ul class="footer__info">
+                        <li class="footer__info-item header__info-location">
+                            <img src="images/icons/icon-location.svg" alt="">
+                            <div class="footer__info-box">
+                                <p class="footer__info-title">
+                                    АДРЕС
+                                </p>
+                                <p class="header__info-text">
+                                    г. Краснодар, <br> ул. Вавилова, 18
+                                </p>
+                            </div>
+                        </li>
+                        <li class="footer__info-item header__info-time">
+                            <img src="images/icons/icon-clock.svg" alt="">
+                            <div class="footer__info-box">
+                                <p class="footer__info-title">
+                                    РАБОТАЕМ
+                                </p>
+                                <p class="header__info-text">
+                                    без выходных с 8.00 до 21.00
+                                </p>
+                            </div>
+                        </li>
+                        <li class="footer__info-item header__info-phone">
+                            <img src="images/icons/icon-phone.svg" alt="">
+                            <div class="footer__info-box">
+                                <a class="footer__info-number" href="tel:+79284426317">
+                                    <span>+7 (928)</span> 442 63 17
+                                </a>
+                                <p class="footer__info-text">
+                                    <span>Звоните!</span> Рассчитаем сразу 
+                                    по самой выгодной цене
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="footer__top-link" href="#popup__bottom">
+                        ЗАКАЗАТЬ ЗВОНОК
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer__bottom">
+        <div class="container">
+            <ul class="footer__bottom-content">
+                <li class="footer__bottom-item">
+                    <p class="footer__bottom-text">
+                        Все права защищены
+                    </p>
+                </li>
+                <li class="footer__bottom-item">
+                    <a class="footer__bottom-text" href="#">
+                        Политика конфиденцальности
+                    </a>
+                </li>
+                <li class="footer__bottom-item">
+                    <a class="footer__bottom-link" href="#">
+                        Разработано в DeepProfy
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
